@@ -38,8 +38,8 @@ export default function EnhancedAbout({ isAboutPage = false }) {
 
     const services = [
         { name: "Invisible Grills", image: "/placeholder.svg?height=150&width=200" },
-        { name: "Mosquito Nets", image: "/placeholder.svg?height=150&width=200" },
-        { name: "Security Doors", image: "/placeholder.svg?height=150&width=200" },
+        // { name: "Mosquito Nets", image: "/placeholder.svg?height=150&width=200" },
+        { name: "Mesh Door", image: "/placeholder.svg?height=150&width=200" },
     ]
 
     return (
@@ -86,7 +86,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                             </div>
                                             <div className="flex items-center gap-1">
                                                 <MapPin className="w-4 h-4" />
-                                                <span>Pan India</span>
+                                                <span>Hyderabad</span>
                                             </div>
                                         </div>
                                     </div>
