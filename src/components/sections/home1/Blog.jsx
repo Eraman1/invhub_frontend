@@ -17,28 +17,14 @@ export default function Blog() {
     <>
       {/*Blog One Start*/}
       {posts && posts.length > 0 && (
-        <section className="blog-one pt-3">
-          <div className="container">
-            <div className="blog-one__top">
-              <div className="section-title text-left">
-                <div className="inline-flex items-center  gap-2 bg-gradient-to-r from-yellow-400/10 to-amber-500/10 border border-yellow-400/20 rounded-full px-4 py-2 mb-6">
-
-                  <span className="text-sm text-yellow-400 font-medium">Blog & News</span>
-                </div>
-                <h6 className="text-2xl md:text-5xl font-bold mb-6">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 animate-gradient-x">
-                    Your Brightest Choice
-                    in Repairs
-                  </span>
-                </h6>
-
-              </div>
-              <div className="blog-one__btn-box">
-                <Link to="blogs" className="blog-one__btn thm-btn">
-                  View all Blog
-                </Link>
-              </div>
+        <section className="blog-one pt-5">
+          <div className="flex justify-center">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400/10 to-amber-500/10 border border-yellow-400/20 rounded-full px-4 py-2 mb-6">
+              {/* <LayoutGrid className="w-4 h-4 text-yellow-400" /> */}
+              <span className="text-sm text-yellow-400 font-medium">Blog & News</span>
             </div>
+          </div>
+          <div className="container">
             <div className="row">
               {/*Blog One Single Start*/}
               {posts?.map((post, index) => (
@@ -84,6 +70,14 @@ export default function Blog() {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="flex justify-center">
+            <Link
+              to={`/blogs`}
+              className="blog-one__learn-more"
+            >
+              All Blog & News<span className="icon-arrow-right"></span>
+            </Link>
           </div>
         </section>
       )}

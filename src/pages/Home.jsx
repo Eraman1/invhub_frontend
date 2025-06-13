@@ -22,6 +22,7 @@ import TestimonialSection from "../components/sections/home1/Testimonial2";
 import EnhancedAbout from "../components/sections/home1/About2";
 import HeroSection from "../components/sections/home1/Hero";
 import ProductSection from "../components/sections/home1/Product2";
+import Faq from "../components/sections/home1/faq";
 
 const apiUrl = import.meta.env.VITE_BASE_URL;
 
@@ -81,6 +82,7 @@ export default function Home() {
       {/* <Process /> */}
       <TestimonialSection />
       <ProductSection />
+      <Faq />
       {/* <Brand /> */}
       <ServiceHighlight />
       <Video />

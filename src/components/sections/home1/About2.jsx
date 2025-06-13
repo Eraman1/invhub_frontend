@@ -40,6 +40,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
         { name: "Invisible Grills", image: "/placeholder.svg?height=150&width=200" },
         // { name: "Mosquito Nets", image: "/placeholder.svg?height=150&width=200" },
         { name: "Mesh Door", image: "/placeholder.svg?height=150&width=200" },
+
     ]
 
     return (
@@ -296,13 +297,13 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                 Invisible Grills
                             </span>
                             <span className="bg-yellow-400/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
-                                Mosquito Nets
+                                Mesh Door
                             </span>
                             <span className="bg-yellow-400/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
                                 Security Doors
                             </span>
                             <span className="bg-yellow-400/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
-                                Pan India Service
+                                Hyderabad, India
                             </span>
                         </div>
                     </div>

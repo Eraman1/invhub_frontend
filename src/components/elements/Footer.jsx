@@ -46,7 +46,7 @@ export default function Footer() {
 
       <footer className="site-footer">
         <div className="site-footer__shape-1 float-bob-x">
-          <img src="assets/images/shapes/800-battery-03.png" alt="" />
+          <img src="assets/images/shapes/services-two-shape-1.png" alt="" />
         </div>
         <div className="container">
           <div className="site-footer__top">

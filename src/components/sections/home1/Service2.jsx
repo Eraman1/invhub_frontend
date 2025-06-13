@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { LayoutGrid } from "lucide-react"
 
 const services = [
     {
@@ -66,6 +67,13 @@ export default function ServicesSection() {
     return (
         <section className="py-16 bg-gradient-to-br from-[#0f0f0f] via-[#e0c47a] to-white">
             <div className="container mx-auto px-4">
+                <div className="flex justify-center">
+                    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400/10 to-amber-500/10 border border-yellow-400/20 rounded-full px-4 py-2 mb-6">
+                        <LayoutGrid className="w-4 h-4 text-yellow-400" />
+                        <span className="text-sm text-yellow-400 font-medium">Services</span>
+                    </div>
+                </div>
+
                 <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
                     Our Services
                 </h2>
@@ -80,7 +88,7 @@ export default function ServicesSection() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: idx * 0.2 }}
                                 viewport={{ once: true }}
-                                className="bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-xl p-6 rounded-2xl shadow-lg w-full max-w-md border border-gray-700 hover:scale-105 transition-transform duration-300"
+                                className="bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-xl p-3 rounded-2xl shadow-lg w-full max-w-md border border-gray-700 hover:scale-105 transition-transform duration-300"
                             >
                                 <div className="mb-4 overflow-hidden rounded-lg">
                                     <img
