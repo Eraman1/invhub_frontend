@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ctaImage from "/assets/images/cta-one-img-2.png";
+import ctaImage from "/assets/images/for_cta.png";
 export default function Cta() {
   return (
     <>
