@@ -62,7 +62,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                         <div className="relative mb-8">
                             <div className="relative overflow-hidden rounded-3xl shadow-2xl group">
                                 <img
-                                    src="/placeholder.svg?height=400&width=600"
+                                    src="assets/images/forAbout.jpg"
                                     alt="INVHUB Safety Solutions - Invisible Grills"
                                     className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
                                 />

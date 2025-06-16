@@ -182,8 +182,8 @@ export default function Footer() {
                 Developed by{" "}
                 <span>
                   {" "}
-                  <Link target="_blank" to="https://www.aadishrisoftech.com/">
-                    Aadishri Softech
+                  <Link target="_blank" to="https://www.webmatictechnology.com/">
+                    Webmatic Technology Pvt. Ltd.
                   </Link>
                 </span>
               </p>
