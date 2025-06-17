@@ -43,11 +43,11 @@ export default function Header2({ scroll, handlePopup }) {
             <div className="main-menu-two__top-inner">
               <div className="main-menu-two__top-left">
                 <div className="main-menu-two__social">
-                  <Link to="https://www.facebook.com/profile.php?id=61565118175123" aria-label="facebook-icon">
+                  <Link to="https://www.facebook.com/" aria-label="facebook-icon">
                     <i className="icon-facebook" style={{ color: "#1877F2" }}></i>
 
                   </Link>
-                  <Link to="https://www.instagram.com/800b.battery/" aria-label="instagram-icon">
+                  <Link to="https://www.instagram.com/" aria-label="instagram-icon">
                     <i className="icon-instagram" style={{ color: "#E1306C" }}></i>
 
                   </Link>
@@ -60,7 +60,7 @@ export default function Header2({ scroll, handlePopup }) {
                     <i className="icon-location" style={{ color: "#FF0000" }}></i>
                   </div>
                   <div className="text">
-                    <p>Al Asayel Street - 160St Warehouse no. 2 - 318th Rd</p>
+                    <p>H.No:-2-2/115/1/A/1 Plot.No:-54/p Suryodaya colony Bandlaguda Jagir Hyderabad, 500086</p>
                   </div>
                 </li>
                 <li>
@@ -71,8 +71,8 @@ export default function Header2({ scroll, handlePopup }) {
                   </div>
                   <div className="text">
                     <p>
-                      <Link to="mailto:support@800bbattery.com">
-                        support@invhub.com
+                      <Link to="mailto:info.invhub.in">
+                        info@invhub.in
                       </Link>
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export default function Header2({ scroll, handlePopup }) {
                       <div className="main-menu-two__call-number">
                         <p>Toll Free</p>
                         <h5>
-                          <Link to="tel:+8002272633">800 227 2633</Link>
+                          <Link to="tel:+918008916868">+91-8008916868</Link>
                         </h5>
                       </div>
                     </div>

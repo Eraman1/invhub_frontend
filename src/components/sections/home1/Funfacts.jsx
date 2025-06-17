@@ -4,84 +4,32 @@ export default function Funfacts() {
   return (
     <>
       {/* Counter One Start */}
-      <section className="counter-one">
-        <div className="container">
-          <div className="counter-one__inner">
-            <div className="row">
-              {/* Counter One Single Start */}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft"
-                data-wow-delay="100ms"
-              >
-                <div className="counter-one__single counter-one__single-1">
-                  <div className="counter-one__icon">
-                    <span className="icon-hands-on-experience"></span>
-                  </div>
-                  <div className="counter-one__count-box">
-                    <CounterUp end={7} />
-                    <span>+</span>
-                  </div>
-                  <p className="counter-one__text">Years of experience</p>
-                </div>
-              </div>
-              {/* Counter One Single End */}
 
-              {/* Counter Two Start */}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className="counter-one__single">
-                  <div className="counter-one__icon">
-                    <span className="icon-technician-1"></span>
-                  </div>
-                  <div className="counter-one__count-box">
-                    <CounterUp end={40} /> <span>+</span>
-                  </div>
-                  <p className="counter-one__text">Expert Team Member</p>
-                </div>
-              </div>
-              {/* Counter Two End */}
+      <div className="container">
+        <div className="counter-one__inner bg-gradient-to-br from-black via-gray-900 to-black">
+          <div className="row">
+            <div className="relative text-center text-white max-w-3xl px-4">
+              <h1 className="text-4xl md:text-6xl text-white font-bold leading-tight mb-4">
+                Your Space Deserves <span className="text-[#D4AF37]">InvHub.</span>
+              </h1>
+              <div className="w-20 h-[2px] bg-[#D4AF37] mx-auto my-4"></div>
+              <p className="text-lg md:text-xl mb-8">
+                Let’s Make It Safer, Sleeker, and Smarter — Together.
+              </p>
 
-              {/* Counter Three Start */}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className="counter-one__single">
-                  <div className="counter-one__icon">
-                    <span className="icon-project-complete"></span>
-                  </div>
-                  <div className="counter-one__count-box">
-                    <CounterUp end={25} />
-                    {/* <span>+</span> */}
-                  </div>
-                  <p className="counter-one__text">Turnaround time</p>
-                </div>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <button className="bg-white text-black font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition">
+                  SCHEDULE A SITE VISIT
+                </button>
+                <button className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black  font-semibold px-6 py-3 rounded-full hover:bg-[#b08989] transition">
+                  REQUEST A QUOTE
+                </button>
               </div>
-              {/* Counter Three End */}
-
-              {/* Counter Four Start */}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInRight"
-                data-wow-delay="100ms"
-              >
-                <div className="counter-one__single">
-                  <div className="counter-one__icon">
-                    <span className="icon-happy-customer"></span>
-                  </div>
-                  <div className="counter-one__count-box">
-                    <CounterUp end={760} />
-                    <span>+</span>
-                  </div>
-                  <p className="counter-one__text">Happy Customer</p>
-                </div>
-              </div>
-              {/* Counter Four End */}
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
       {/* Counter One End */}
     </>
   );

@@ -58,7 +58,7 @@ export default function Footer() {
                 <div className="footer-widget__column footer-widget__about">
                   <div className="footer-widget__logo">
                     <Link to="/">
-                      <img className="w-56" src={footerLogo} alt="logo" />
+                      <img className="w-52" src={footerLogo} alt="logo" />
                     </Link>
                   </div>
                   <p className="footer-widget__about-text">
@@ -68,18 +68,18 @@ export default function Footer() {
                   <div className="site-footer__social">
                     <Link
                       to={
-                        "https://www.facebook.com/profile.php?id=61565118175123"
+                        "https://www.facebook.com"
                       } aria-label="facebook icon"
                     >
                       <i className="icon-facebook"></i>
                     </Link>
-                    <Link to={"https://www.instagram.com/800b.battery/"} aria-label="instagram icon">
+                    <Link to={"https://www.instagram.com/"} aria-label="instagram icon">
                       <i className="icon-instagram"></i>
                     </Link>
                   </div>
-                  <div className="site-footer__social QrCode">
+                  {/* <div className="site-footer__social QrCode">
                     <img src={QrCode} alt="logo" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div
@@ -146,9 +146,11 @@ export default function Footer() {
                       <h3>Address</h3>
                       <div className="content">
                         <p>
-                          Al Asayel Street - 160St Warehouse no. 2 - 318th Rd -
-                          near Al Ahli Driving school - Al Quoz Industrial Area
-                          3 - Dubai
+                          <b>Office Address:</b> H.No:-2-2/115/1/A/1 Plot.No:-54/p Suryodaya colony Bandlaguda Jagir Hyderabad, 500086
+                        </p>
+                        <br />
+                        <p>
+                          <b>Experience Centers:</b> P.NO:191, Road No 4, Venkateshwara colony, Hastinapuram. Hyderabad 500079
                         </p>
                       </div>
                     </li>
@@ -156,14 +158,14 @@ export default function Footer() {
                       <h3>Contact</h3>
                       <div className="content">
                         <p>
-                          <Link to="tel:+8002272633">Toll Free: 800 227 2633</Link>
+                          <Link to="tel:+918008916868">Phone: +91-8008916868</Link>
                         </p>
                         <p>
-                          <Link to="tel:+971509344668">M: +971 50 934 4668</Link>
+                          <Link to="tel:+919966761117">Phone: +91-9966761117</Link>
                         </p>
                         <p>
-                          <Link to="mailto:support@800bbattery.com">
-                            E: support@invhub.com
+                          <Link to="mailto:info@invhub.in">
+                            Email: info@invhub.in
                           </Link>
                         </p>
                       </div>

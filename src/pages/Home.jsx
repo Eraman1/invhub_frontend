@@ -23,6 +23,9 @@ import EnhancedAbout from "../components/sections/home1/About2";
 import HeroSection from "../components/sections/home1/Hero";
 import ProductSection from "../components/sections/home1/Product2";
 import Faq from "../components/sections/home1/faq";
+import WhatMakesUsDifferent from "../components/sections/home1/WhatMakesUsDifferent";
+import Gallery from "../components/sections/home1/Gallery";
+import VisitSection from "../components/sections/home1/Visit";
 
 const apiUrl = import.meta.env.VITE_BASE_URL;
 
@@ -81,11 +84,14 @@ export default function Home() {
       <ServicesSection />
       {/* <Process /> */}
       <TestimonialSection />
+      <WhatMakesUsDifferent />
       <ProductSection />
       <Faq />
       {/* <Brand /> */}
       <ServiceHighlight />
-      <Video />
+      <Gallery />
+      {/* <Video /> */}
+      {/* <VisitSection/> */}
       <Funfacts />
       <Blog />
     </div>

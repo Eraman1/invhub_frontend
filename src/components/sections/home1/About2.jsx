@@ -46,7 +46,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
     return (
         <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 py-20 px-4 overflow-hidden">
             {/* Background Pattern */}
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fillRule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23000000%22%20fillOpacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-50"></div>
+            {/* <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fillRule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23000000%22%20fillOpacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-50"></div> */}
 
             {/* Floating Elements */}
             <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-yellow-400/10 to-amber-500/10 rounded-full blur-xl animate-pulse"></div>
@@ -96,14 +96,14 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                         </div>
 
                         {/* Service Gallery */}
-                        <div className="grid grid-cols-3 gap-4 mb-8">
+                        <div className="grid grid-cols-2 gap-4 mb-8">
                             {services.map((service, index) => (
                                 <div key={index} className="group cursor-pointer">
                                     <div className="relative overflow-hidden rounded-xl shadow-lg">
                                         <img
                                             src={service.image || "/placeholder.svg"}
                                             alt={service.name}
-                                            className="w-full h-24 object-cover transition-transform duration-300 group-hover:scale-110"
+                                            className="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                                         <div className="absolute bottom-2 left-2 right-2">
@@ -115,8 +115,8 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                         </div>
 
                         {/* Two Column Layout */}
-                        <div className="grid grid-cols-2 gap-6">
-                            {/* Certification Badge - Enhanced */}
+                        {/* <div className="grid grid-cols-2 gap-6">
+                            Certification Badge - Enhanced
                             <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 text-center shadow-xl border border-gray-700 relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-400/20 to-amber-500/20 rounded-full -translate-y-10 translate-x-10"></div>
                                 <div className="relative z-10">
@@ -131,10 +131,10 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                         ))}
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
-                            {/* Contact Info Card */}
-                            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
+                        {/* Contact Info Card */}
+                        {/* <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
                                 <div className="text-center mb-4">
                                     <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-3">
                                         <Phone className="w-6 h-6 text-black" />
@@ -156,20 +156,28 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Bottom Image with Stats Overlay */}
                         <div className="mt-6 relative">
-                            <div className="relative overflow-hidden rounded-2xl shadow-xl group">
+                            <div className="relative overflow-hidden group">
+                                <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 leading-tight">
+                                    <span className="text-gray-900">Protect Your Home</span>
+                                    <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600">
+                                        Across India
+                                    </span>
+                                </h2>
+
                                 <img
-                                    src="/placeholder.svg?height=200&width=600"
+                                    src="/assets/images/map.png"
                                     alt="INVHUB Installation Process"
-                                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+                                {/* <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div> */}
 
                                 {/* Stats Overlay */}
-                                <div className="absolute inset-0 flex items-center">
+                                {/* <div className="absolute inset-0 flex items-center">
                                     <div className="grid grid-cols-3 gap-4 w-full px-6">
                                         <div className="text-center">
                                             <div className="text-2xl font-bold text-yellow-400">1000+</div>
@@ -184,7 +192,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                             <div className="text-xs text-white">Support</div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 

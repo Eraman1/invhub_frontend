@@ -152,7 +152,7 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -0.72px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 }
 
 .blog-one__title a {
@@ -207,7 +207,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 110px;
+    width: auto;
+    padding: 0 10px;
     height: 31px;
     background-color: var(--erepair-base);
     border-radius: 16px;

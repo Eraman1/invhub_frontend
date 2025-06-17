@@ -2,7 +2,7 @@ import React from "react";
 
 const FullPageLoader = () => {
   return (
-    <div className="fixed inset-0 bg-[#fcc895] flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-gray-200 flex items-center justify-center z-50">
       <div className="flex flex-col items-center space-y-2">
         {/* <img
           src="assets/images/800bbattery.png"
