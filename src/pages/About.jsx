@@ -7,6 +7,8 @@ import Testimonial from "../components/sections/home1/Testimonial";
 import { Helmet } from "react-helmet-async";
 import Process from "../components/Process";
 import { useEffect, useState } from "react";
+import EnhancedAbout from "../components/sections/home1/About2";
+import AboutInvhubSection from "../components/AboutInvhub";
 const apiUrl = import.meta.env.VITE_BASE_URL;
 export default function About() {
   const title = "About";
@@ -38,17 +40,21 @@ export default function About() {
       <Helmet>
         <title>{metaTags?.title || ""}</title>
         <meta
-          name={metaTags?.description || "" }
+          name={metaTags?.description || ""}
           content={metaTags?.keywords || ""}
         />
-        { metaTags?.other || ""}
+        {metaTags?.other || ""}
       </Helmet>
       <Breadcrumb title={title} breadcrumbs={breadcrumbs} />
-      <AboutHome />
-      
-      <Video />
+      <EnhancedAbout />
+
+      <AboutInvhubSection />
+
+      {/* <Video /> */}
       <Funfacts />
-      <Testimonial />
+      <br />
+      <br />
+      {/* <Testimonial /> */}
     </div>
   );
 }

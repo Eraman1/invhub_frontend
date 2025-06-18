@@ -12,9 +12,9 @@ export default function Breadcrumb({ title, breadcrumbs }) {
         </div>
         <div className="container">
           <div className="page-header__inner">
-            <div className="page-header__img-1">
+            {/* <div className="page-header__img-1">
               <img className="w-auto h-96" src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/0bf3e2e5-a69c-4d78-f550-48dd553af700/public" alt="about" />
-            </div>
+            </div> */}
             <h3>{title}</h3>
             <div className="thm-breadcrumb__inner">
               <ul className="thm-breadcrumb list-unstyled">

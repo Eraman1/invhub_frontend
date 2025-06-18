@@ -295,14 +295,14 @@
 .contact-three__input-box input[type="number"] {
   height: 57px;
   width: 100%;
-  background-color: #232323;
+  background-color: #f4f1f1;
   border: 1px solid rgba(var(--erepair-white-rgb), 0.1);
   padding-left: 20px;
   padding-right: 20px;
   outline: none;
   font-size: 16px;
   font-weight: 400;
-  color: var(--erepair-gray);
+  color: var(--erepair-black);
   display: block;
   border-radius: 20px;
 }
@@ -310,14 +310,14 @@
 .contact-three__input-box select {
   height: 57px;
   width: 100%;
-  background-color: #232323;
+  background-color: #f4f1f1;
   border: 1px solid rgba(var(--erepair-white-rgb), 0.1);
   padding-left: 20px;
   padding-right: 20px;
   outline: none;
   font-size: 16px;
   font-weight: 400;
-  color: var(--erepair-gray);
+  color: var(--erepair-black);
   display: block;
   border-radius: 20px;
   appearance: none;
@@ -336,13 +336,13 @@
 .contact-three__input-box .nice-select {
   height: 57px;
   width: 100%;
-  background-color: #232323;
+  background-color: #f4f1f1;
   border: 1px solid rgba(var(--erepair-white-rgb), 0.1);
   padding-left: 20px;
   padding-right: 20px;
   outline: none;
   font-size: 16px;
-  color: var(--erepair-gray);
+  color: var(--erepair-black);
   display: block;
   font-weight: 400;
   border-radius: 20px;
@@ -381,7 +381,7 @@
   color: var(--erepair-gray);
   height: 175px;
   width: 100%;
-  background-color: #232323;
+  background-color: #f4f1f1;
   border: 1px solid rgba(var(--erepair-white-rgb), 0.1);
   padding: 15px 20px 30px;
   border-radius: 20px;

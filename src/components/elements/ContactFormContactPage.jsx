@@ -69,13 +69,13 @@ export function ContactFormContactPage({ sourcePage }) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`, 
+          Authorization: `Bearer ${token}`,
         },
-        body: JSON.stringify(payload), 
+        body: JSON.stringify(payload),
       });
       console.log(response);
       if (response.ok) {
-        navigate("/thank-you", { state: { fromFormSubmission: true }} );
+        navigate("/thank-you", { state: { fromFormSubmission: true } });
         toast.success("Form submitted successfully!");
         setFormData({
           ffname: "",
@@ -115,7 +115,7 @@ export function ContactFormContactPage({ sourcePage }) {
     >
       <div className="row">
         <div className="col-xl-6 col-lg-6">
-          <div className="contact-three__input-box">
+          <div className="contact-three__input-box ">
             <TextInput
               type="text"
               name="ffname"
@@ -152,7 +152,7 @@ export function ContactFormContactPage({ sourcePage }) {
         <div className="col-xl-6 col-lg-6">
           <div className="contact-three__input-box">
             <Select
-            aria-label="Select"
+              aria-label="Select"
               name="services"
               value={formData.services}
               onChange={handleChange}
@@ -180,9 +180,12 @@ export function ContactFormContactPage({ sourcePage }) {
             />
           </div>
           <div className="contact-three__btn-box">
-            <Button type="submit" className="thm-btn contact-three__btn">
+            {/* <Button type="submit" className="thm-btn contact-three__btn">
               Send a message
-            </Button>
+            </Button> */}
+            <button type="submit" className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black  font-semibold px-6 py-3 rounded-full hover:bg-[#b08989] transition">
+              Send a message
+            </button>
           </div>
 
           {publishError && (
