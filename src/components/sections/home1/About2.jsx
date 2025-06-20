@@ -113,6 +113,34 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                 </div>
                             ))}
                         </div>
+                        {/* Stats */}
+                        <div className="grid grid-cols-2 gap-4 mb-8">
+                            {stats.map((stat, index) => (
+                                <div
+                                    key={index}
+                                    className="text-center p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700"
+                                >
+                                    <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <stat.icon className="w-5 h-5 text-black" />
+                                    </div>
+                                    <div className="text-2xl font-bold text-yellow-400 mb-1">{stat.number}</div>
+                                    <div className="text-xs text-gray-300">{stat.label}</div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* CTA Button */}
+                        {!isAboutPage && (
+                            <div className="flex gap-4">
+                                <button className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 flex items-center gap-2">
+                                    Learn More About Us
+                                    <ArrowRight className="w-4 h-4" />
+                                </button>
+                                <button className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all duration-300">
+                                    Our Services
+                                </button>
+                            </div>
+                        )}
 
                         {/* Two Column Layout */}
                         {/* <div className="grid grid-cols-2 gap-6">
@@ -158,43 +186,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                             </div>
                         </div> */}
 
-                        {/* Bottom Image with Stats Overlay */}
-                        <div className="mt-6 relative">
-                            <div className="relative overflow-hidden group">
-                                <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 leading-tight">
-                                    <span className="text-gray-900">Protect Your Home</span>
-                                    <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600">
-                                        Across India
-                                    </span>
-                                </h2>
 
-                                <img
-                                    src="/assets/images/map.png"
-                                    alt="INVHUB Installation Process"
-                                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                                {/* <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div> */}
-
-                                {/* Stats Overlay */}
-                                {/* <div className="absolute inset-0 flex items-center">
-                                    <div className="grid grid-cols-3 gap-4 w-full px-6">
-                                        <div className="text-center">
-                                            <div className="text-2xl font-bold text-yellow-400">1000+</div>
-                                            <div className="text-xs text-white">Happy Clients</div>
-                                        </div>
-                                        <div className="text-center">
-                                            <div className="text-2xl font-bold text-yellow-400">6+</div>
-                                            <div className="text-xs text-white">Years Experience</div>
-                                        </div>
-                                        <div className="text-center">
-                                            <div className="text-2xl font-bold text-yellow-400">24/7</div>
-                                            <div className="text-xs text-white">Support</div>
-                                        </div>
-                                    </div>
-                                </div> */}
-                            </div>
-                        </div>
 
                         {/* Floating Decorative Elements */}
                         <div className="absolute -top-5 -left-5 w-10 h-10 bg-gradient-to-r from-yellow-400/30 to-amber-500/30 rounded-full animate-bounce delay-500"></div>
@@ -230,7 +222,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                 beauty. We specialize in
                                 <span className="text-yellow-600 font-medium">
                                     {" "}
-                                    Invisible Grills, Pleated Mosquito Nets, and Sliding Security Doors
+                                    Invisible Grills, Mesh Door, and Sliding Security Doors
                                 </span>
                                 , which provide protection while maintaining your view.
                             </p>
@@ -245,6 +237,12 @@ export default function EnhancedAbout({ isAboutPage = false }) {
 
                         {/* Features */}
                         <div className="grid gap-4 mb-8">
+                            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                                <span className="text-gray-900">Why Choose </span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600">
+                                    InvHub
+                                </span>
+                            </h2>
                             {features.map((feature, index) => (
                                 <div
                                     key={index}
@@ -261,37 +259,46 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                             ))}
                         </div>
 
-                        {/* Stats */}
-                        <div className="grid grid-cols-2 gap-4 mb-8">
-                            {stats.map((stat, index) => (
-                                <div
-                                    key={index}
-                                    className="text-center p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700"
-                                >
-                                    <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-2">
-                                        <stat.icon className="w-5 h-5 text-black" />
-                                    </div>
-                                    <div className="text-2xl font-bold text-yellow-400 mb-1">{stat.number}</div>
-                                    <div className="text-xs text-gray-300">{stat.label}</div>
-                                </div>
-                            ))}
-                        </div>
 
-                        {/* CTA Button */}
-                        {!isAboutPage && (
-                            <div className="flex gap-4">
-                                <button className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 flex items-center gap-2">
-                                    Learn More About Us
-                                    <ArrowRight className="w-4 h-4" />
-                                </button>
-                                <button className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all duration-300">
-                                    Our Services
-                                </button>
-                            </div>
-                        )}
                     </div>
                 </div>
+                {/* Bottom Image with Stats Overlay */}
+                <div className="mt-6 relative">
+                    <div className="relative overflow-hidden group">
+                        <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 leading-tight">
+                            <span className="text-gray-900">Protect Your Home</span>
+                            <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600">
+                                Across India
+                            </span>
+                        </h2>
 
+                        <img
+                            src="/assets/images/invhub_website_map.png"
+                            alt="INVHUB Installation Process"
+                            className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div> */}
+
+                        {/* Stats Overlay */}
+                        {/* <div className="absolute inset-0 flex items-center">
+                                    <div className="grid grid-cols-3 gap-4 w-full px-6">
+                                        <div className="text-center">
+                                            <div className="text-2xl font-bold text-yellow-400">1000+</div>
+                                            <div className="text-xs text-white">Happy Clients</div>
+                                        </div>
+                                        <div className="text-center">
+                                            <div className="text-2xl font-bold text-yellow-400">6+</div>
+                                            <div className="text-xs text-white">Years Experience</div>
+                                        </div>
+                                        <div className="text-center">
+                                            <div className="text-2xl font-bold text-yellow-400">24/7</div>
+                                            <div className="text-xs text-white">Support</div>
+                                        </div>
+                                    </div>
+                                </div> */}
+                    </div>
+                </div>
                 {/* Bottom Section - Additional Info */}
                 <div className="mt-20 text-center">
                     <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl p-8 md:p-12 border border-gray-700">
