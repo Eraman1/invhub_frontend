@@ -46,7 +46,7 @@ export default function About() {
         {metaTags?.other || ""}
       </Helmet>
       <Breadcrumb title={title} breadcrumbs={breadcrumbs} />
-      <EnhancedAbout />
+      <EnhancedAbout isAboutPage={true} />
 
       <AboutInvhubSection />
 

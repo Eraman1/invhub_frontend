@@ -34,6 +34,11 @@ export default function EnhancedAbout({ isAboutPage = false }) {
             title: "Sliding Security Doors",
             description: "Premium sliding security doors available across India",
         },
+        {
+            icon: Shield,
+            title: "Maximum Security",
+            description: "Advanced safety solutions without compromising aesthetics",
+        },
     ]
 
     const services = [
@@ -96,7 +101,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                         </div>
 
                         {/* Service Gallery */}
-                        <div className="grid grid-cols-2 gap-4 mb-8">
+                        {/* <div className="grid grid-cols-2 gap-4 mb-8">
                             {services.map((service, index) => (
                                 <div key={index} className="group cursor-pointer">
                                     <div className="relative overflow-hidden rounded-xl shadow-lg">
@@ -112,22 +117,9 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                     </div>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                         {/* Stats */}
-                        <div className="grid grid-cols-2 gap-4 mb-8">
-                            {stats.map((stat, index) => (
-                                <div
-                                    key={index}
-                                    className="text-center p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700"
-                                >
-                                    <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-2">
-                                        <stat.icon className="w-5 h-5 text-black" />
-                                    </div>
-                                    <div className="text-2xl font-bold text-yellow-400 mb-1">{stat.number}</div>
-                                    <div className="text-xs text-gray-300">{stat.label}</div>
-                                </div>
-                            ))}
-                        </div>
+
 
                         {/* CTA Button */}
                         {!isAboutPage && (
@@ -136,9 +128,9 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                     Learn More About Us
                                     <ArrowRight className="w-4 h-4" />
                                 </button>
-                                <button className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all duration-300">
+                                {/* <button className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all duration-300">
                                     Our Services
-                                </button>
+                                </button> */}
                             </div>
                         )}
 
@@ -235,32 +227,49 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                             </p>
                         </div>
 
-                        {/* Features */}
-                        <div className="grid gap-4 mb-8">
-                            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                                <span className="text-gray-900">Why Choose </span>
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600">
-                                    InvHub
-                                </span>
-                            </h2>
-                            {features.map((feature, index) => (
-                                <div
-                                    key={index}
-                                    className="flex items-start gap-4 p-4 bg-white/50 rounded-xl border border-gray-200 hover:border-yellow-400/30 transition-all duration-300 hover:shadow-md"
-                                >
-                                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <feature.icon className="w-6 h-6 text-black" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-semibold text-gray-900 mb-1">{feature.title}</h4>
-                                        <p className="text-sm text-gray-600">{feature.description}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+
 
 
                     </div>
+                </div>
+                {/* Features */}
+                <div className="grid gap-4 mb-8 py-5">
+                    <h2 className="text-4xl md:text-5xl text-center font-bold mb-6 leading-tight">
+                        <span className="text-gray-900">Why Choose </span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600">
+                            InvHub
+                        </span>
+                    </h2>
+                    <div className="grid grid-cols-2 gap-4 mb-8">
+                        {features.map((feature, index) => (
+                            <div
+                                key={index}
+                                className="flex items-start gap-4 p-2 bg-white/50 rounded-xl border border-gray-200 hover:border-yellow-400/30 transition-all duration-300 hover:shadow-md"
+                            >
+                                <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <feature.icon className="w-6 h-6 text-black" />
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold text-gray-900 mb-1">{feature.title}</h4>
+                                    <p className="text-sm text-gray-600">{feature.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="grid grid-cols-4 gap-4 mb-8">
+                    {stats.map((stat, index) => (
+                        <div
+                            key={index}
+                            className="text-center p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700"
+                        >
+                            <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                <stat.icon className="w-5 h-5 text-black" />
+                            </div>
+                            <div className="text-2xl font-bold text-yellow-400 mb-1">{stat.number}</div>
+                            <div className="text-xs text-gray-300">{stat.label}</div>
+                        </div>
+                    ))}
                 </div>
                 {/* Bottom Image with Stats Overlay */}
                 <div className="mt-6 relative">
@@ -272,12 +281,13 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                                 Across India
                             </span>
                         </h2>
-
-                        <img
-                            src="/assets/images/invhub_website_map.png"
-                            alt="INVHUB Installation Process"
-                            className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
+                        <div className="px-24">
+                            <img
+                                src="/assets/images/invhub_website_map.png"
+                                alt="INVHUB Installation Process"
+                                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                        </div>
                         {/* <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div> */}
 
                         {/* Stats Overlay */}
