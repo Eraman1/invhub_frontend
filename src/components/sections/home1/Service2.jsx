@@ -7,7 +7,7 @@ import { LayoutGrid } from "lucide-react"
 
 const services = [
     {
-        title: "Business Strategy",
+        title: "Invisible Grills",
         description: "We help you define a clear business strategy to grow fast.Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.",
         images: [
             "assets/images/glamorous-curly-lady.jpg",
@@ -17,7 +17,7 @@ const services = [
         ],
     },
     {
-        title: "Web Development",
+        title: "Mesh Door,",
         description: "Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.",
         images: [
             "assets/images/glamorous-curly-lady.jpg",
@@ -25,15 +25,15 @@ const services = [
             "assets/images/glamorous-curly-lady.jpg",
         ],
     },
-    {
-        title: "Web Development",
-        description: "Modern, fast, and secure websites using React and Tailwind. Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.",
-        images: [
-            "assets/images/glamorous-curly-lady.jpg",
-            "assets/images/Convert-your-Balcony.webp",
-            "assets/images/glamorous-curly-lady.jpg",
-        ],
-    },
+    // {
+    //     title: "Web Development",
+    //     description: "Modern, fast, and secure websites using React and Tailwind. Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.Modern, fast, and secure websites using React and Tailwind.",
+    //     images: [
+    //         "assets/images/glamorous-curly-lady.jpg",
+    //         "assets/images/Convert-your-Balcony.webp",
+    //         "assets/images/glamorous-curly-lady.jpg",
+    //     ],
+    // },
     // Add more services as needed
 ];
 

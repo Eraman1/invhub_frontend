@@ -48,16 +48,22 @@ export default function Menu() {
           <Link to="/about">About Us</Link>
         </li>
         <li className="dropdown ">
-          <Link to="/services">Services</Link>
+          <Link to="#">Services</Link>
           <ul>
-            {userServices?.map((service) => (
+            {/* {userServices?.map((service) => (
               <li key={service._id}>
                 <Link to={`/service/${service.slug}`} aria-label={`Learn more about the service: ${service.title}`}>{service.title}</Link>
               </li>
-            ))}
+            ))} */}
+            <li >
+              <Link to={`/invisible-grills`}>Invisible Grill</Link>
+            </li>
+            <li >
+              <Link to={`/mesh-door`}>Mesh Door</Link>
+            </li>
           </ul>
         </li>
-        <li className="dropdown">
+        {/* <li className="dropdown">
           <Link to="/products">Products</Link>
           <ul>
             {userProducts.map((product) => (
@@ -66,7 +72,7 @@ export default function Menu() {
               </li>
             ))}
           </ul>
-        </li>
+        </li> */}
         <li>
           <Link to="/blogs">Blog</Link>
         </li>

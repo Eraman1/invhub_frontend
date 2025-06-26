@@ -26,6 +26,7 @@ import Faq from "../components/sections/home1/faq";
 import WhatMakesUsDifferent from "../components/sections/home1/WhatMakesUsDifferent";
 import Gallery from "../components/sections/home1/Gallery";
 import VisitSection from "../components/sections/home1/Visit";
+import ServicesSectionNew from "../components/sections/home1/Services-section";
 
 const apiUrl = import.meta.env.VITE_BASE_URL;
 
@@ -81,11 +82,12 @@ export default function Home() {
       <HeroSection />
       <EnhancedAbout />
       {/* <TrustBanner /> */}
-      <ServicesSection />
+      {/* <ServicesSection /> */}
+      <ServicesSectionNew />
       {/* <Process /> */}
       <TestimonialSection />
       <WhatMakesUsDifferent />
-      <ProductSection />
+      {/* <ProductSection /> */}
       <Faq />
       {/* <Brand /> */}
       <ServiceHighlight />

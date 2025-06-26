@@ -165,7 +165,7 @@ export default function EnhancedTestimonial() {
                     >
                         {testimonials.map((testimonial, index) => (
                             <SwiperSlide key={index}>
-                                <div className="group">
+                                <div className="group py-3">
                                     <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 md:p-10 border border-gray-700 shadow-xl hover:shadow-yellow-500/20 transition-all duration-500 hover:border-yellow-400/50 hover:-translate-y-2">
                                         {/* Company Logo & Verification */}
                                         <div className="flex items-center justify-between mb-6">

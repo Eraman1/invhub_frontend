@@ -80,7 +80,7 @@ const AboutInvhubSection = () => {
                     </div>
                 </div>
             </section>
-            <TestimonialSection />
+            {/* <TestimonialSection /> */}
             <section className="bg-light py-16 text-gray-800">
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center mb-10">

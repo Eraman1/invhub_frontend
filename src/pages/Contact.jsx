@@ -98,7 +98,7 @@ export default function Contact() {
         <meta name="description" content={metaTags?.description || ""} />
         <meta name="keywords" content={metaTags?.keywords || ""} />
       </Helmet>
-      <Breadcrumb title={title} breadcrumbs={breadcrumbs} />
+      {/* <Breadcrumb title={title} breadcrumbs={breadcrumbs} /> */}
       <section className="py-20 bg-gradient-to-br from-white via-[#f8f9fa] to-[#f1f3f5] text-gray-800">
         <div className="max-w-7xl mx-auto px-6 sm:px-10">
           <div className="text-center mb-16">

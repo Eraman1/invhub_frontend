@@ -5,6 +5,8 @@ import UpdateMetaData from "./pages/UpdateMetaData";
 import UpdateOtherMetaData from "./pages/UpdateOtherMetaData";
 import CreateOtherMetaData from "./pages/CreateOtherMetaData";
 import CreateMetaData from "./pages/CreateMetaData";
+import MeshDoor from "./pages/MeshDoor";
+import InvisibleGrills from "./pages/InvisibleGrills";
 // Lazy loading of pages
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -127,6 +129,9 @@ export default function App() {
             <Route path="/sign-in" element={<SignIn />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/mesh-door" element={<MeshDoor />} />
+            <Route path="/invisible-grills" element={<InvisibleGrills />} />
+            <Route path="/mesh-door" element={<MeshDoor />} />
 
             {/* Private Routes */}
             <Route element={<PrivateRoute />}>

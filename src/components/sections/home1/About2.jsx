@@ -60,6 +60,9 @@ export default function EnhancedAbout({ isAboutPage = false }) {
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-start">
                     {/* Left Side - Enhanced Visual Content */}
+
+
+                    {/* Right Side - Content */}
                     <div
                         className={`relative transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}
                     >
@@ -185,8 +188,6 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                         <div className="absolute top-1/2 -right-5 w-8 h-8 bg-gradient-to-r from-amber-400/30 to-yellow-500/30 rounded-full animate-pulse delay-1000"></div>
                         <div className="absolute -bottom-5 left-1/3 w-6 h-6 bg-gradient-to-r from-yellow-500/30 to-amber-400/30 rounded-full animate-bounce delay-700"></div>
                     </div>
-
-                    {/* Right Side - Content */}
                     <div
                         className={`transition-all duration-1000 delay-300 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}
                     >
@@ -240,7 +241,8 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                             InvHub
                         </span>
                     </h2>
-                    <div className="grid grid-cols-2 gap-4 mb-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+
                         {features.map((feature, index) => (
                             <div
                                 key={index}
@@ -257,7 +259,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                         ))}
                     </div>
                 </div>
-                <div className="grid grid-cols-4 gap-4 mb-8">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                     {stats.map((stat, index) => (
                         <div
                             key={index}
@@ -274,20 +276,21 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                 {/* Bottom Image with Stats Overlay */}
                 <div className="mt-6 relative">
                     <div className="relative overflow-hidden group">
-                        <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 leading-tight">
+                        {/* <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 leading-tight">
                             <span className="text-gray-900">Protect Your Home</span>
                             <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600">
                                 Across India
                             </span>
-                        </h2>
-                        <div className="px-24">
+                        </h2> */}
+                        <div className="px-4">
                             <img
                                 src="/assets/images/invhub_website_map.png"
                                 alt="INVHUB Installation Process"
-                                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                                className="max-w-[600px] mx-auto w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                         </div>
+
                         {/* <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div> */}
 
                         {/* Stats Overlay */}

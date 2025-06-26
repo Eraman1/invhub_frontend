@@ -46,7 +46,7 @@ export default function Blog() {
         />
         {metaTags?.other || ""}
       </Helmet>
-      <Breadcrumb title={title} breadcrumbs={breadcrumbs} />
+      {/* <Breadcrumb title={title} breadcrumbs={breadcrumbs} /> */}
       {/*Blog One Start*/}
       {posts && posts.length > 0 && (
         <section className="blog-list">
