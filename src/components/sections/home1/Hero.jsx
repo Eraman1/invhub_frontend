@@ -19,7 +19,7 @@ export default function HeroSection() {
                 {/* Left - Image with Play Button */}
                 <div className="relative w-full lg:w-1/2 rounded-lg overflow-hidden shadow-lg">
                     <img
-                        src="assets/images/demo_img.jpg"
+                        src="assets/images/HomeHeroNav.png"
                         alt="Demo"
                         className="rounded-lg w-full h-auto"
                     />
@@ -27,7 +27,8 @@ export default function HeroSection() {
                         onClick={openVideo}
                         className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/40 transition duration-300"
                     >
-                        <div className="bg-gray-200 p-3 rounded-full shadow-lg hover:scale-105 transition">
+                        <div className="bg-[rgba(229,231,235,0.5)] p-3 rounded-full shadow-lg hover:scale-105 transition">
+
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-10 w-10 text-gray-800"

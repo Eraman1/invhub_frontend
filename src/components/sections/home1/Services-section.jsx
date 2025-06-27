@@ -17,17 +17,17 @@ const invisibleGrillFeatures = ["Child Safety", "Unobstructed Views", "Weather R
 
 const meshDoorImages = [
     {
-        src: "/placeholder.svg?height=300&width=400",
+        src: "/assets/images/meshdoor0.png",
         alt: "Modern Sliding Mesh Door Installation",
         title: "Sliding Mesh Door",
     },
     {
-        src: "/placeholder.svg?height=300&width=400",
+        src: "/assets/images/meshdoor1.png",
         alt: "Premium Hinged Mesh Door Design",
         title: "Hinged Mesh Door",
     },
     {
-        src: "/placeholder.svg?height=300&width=400",
+        src: "/assets/images/meshdoor2.png",
         alt: "Automatic Mesh Door System",
         title: "Automatic Mesh Door",
     },
@@ -35,17 +35,17 @@ const meshDoorImages = [
 
 const invisibleGrillImages = [
     {
-        src: "/placeholder.svg?height=300&width=400",
+        src: "/assets/images/invisible0.jpg",
         alt: "Balcony Invisible Safety Grill",
         title: "Balcony Safety Grill",
     },
     {
-        src: "/placeholder.svg?height=300&width=400",
+        src: "/assets/images/invisible1.png",
         alt: "Window Invisible Grill Installation",
         title: "Window Safety Grill",
     },
     {
-        src: "/placeholder.svg?height=300&width=400",
+        src: "/assets/images/invisible2.jpg",
         alt: "Terrace Invisible Safety Solution",
         title: "Terrace Safety Grill",
     },

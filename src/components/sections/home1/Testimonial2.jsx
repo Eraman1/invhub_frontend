@@ -11,8 +11,8 @@ import "swiper/css/effect-coverflow"
 
 const testimonials = [
     {
-        name: "David Kim",
-        title: "CEO & Founder",
+        name: "Neha Verma",
+        title: "Pune",
         company: "ArtSpace Digital",
         companyLogo: "/placeholder.svg?height=40&width=120",
         image: "/placeholder.svg?height=80&width=80",
@@ -20,7 +20,7 @@ const testimonials = [
         projectType: "Industrial Safety",
         rating: 5,
         review:
-            "INVHUB's safety management system transformed our workplace safety protocols. The comprehensive solution they delivered exceeded all our expectations and significantly reduced workplace incidents.",
+            "From the first consultation to the final installation, INVhub was incredibly professional and responsive. The team helped me choose the perfect solution for my balcony and handled everything seamlessly.",
         metrics: { incidents: "-85%", compliance: "100%", efficiency: "+60%" },
         tags: ["Safety", "Compliance", "Analytics"],
         verified: true,
@@ -36,7 +36,7 @@ const testimonials = [
         projectType: "Safety Analytics",
         rating: 5,
         review:
-            "The risk assessment platform was executed flawlessly with real-time monitoring and predictive analytics. Their team understood our safety requirements perfectly and delivered beyond expectations.",
+            "I was genuinely impressed by the quality of the invisible grills. The stainless steel wires are sturdy, rust-proof, and still manage to look sleek. It’s rare to find products that combine safety and style so well. ",
         metrics: { "risk-reduction": "+75%", monitoring: "24/7", alerts: "Real-time" },
         tags: ["Risk Management", "Analytics", "Monitoring"],
         verified: true,
@@ -144,7 +144,7 @@ export default function EnhancedTestimonial() {
                         }}
                         loop
                         autoplay={{
-                            delay: 8000,
+                            delay: 5000,
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true,
                         }}
@@ -156,7 +156,7 @@ export default function EnhancedTestimonial() {
                                 centeredSlides: true,
                             },
                             1024: {
-                                slidesPerView: 1,
+                                slidesPerView: 2,
                                 centeredSlides: true,
                             },
                         }}

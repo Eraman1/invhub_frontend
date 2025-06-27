@@ -21,22 +21,28 @@ export default function EnhancedAbout({ isAboutPage = false }) {
     const features = [
         {
             icon: Eye,
-            title: "Invisible Protection",
+            title: "Invisible Safety Grills",
             description: "Maintain your beautiful view while ensuring complete safety",
         },
         {
             icon: Shield,
-            title: "Maximum Security",
+            title: "Custom-Fit Installations",
             description: "Advanced safety solutions without compromising aesthetics",
         },
         {
             icon: Lock,
-            title: "Sliding Security Doors",
+            title: "Affordable Options",
             description: "Premium sliding security doors available across India",
         },
         {
             icon: Shield,
-            title: "Maximum Security",
+            title: "Dedicated Support Team",
+            description: "Advanced safety solutions without compromising aesthetics",
+        },
+
+        {
+            icon: Shield,
+            title: "Long-Lasting Value",
             description: "Advanced safety solutions without compromising aesthetics",
         },
     ]
@@ -211,20 +217,19 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                         {/* Description */}
                         <div className="space-y-4 mb-8">
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                At <span className="font-semibold text-gray-900">INVHUB</span>, we stress safety while maintaining
-                                beauty. We specialize in
+                                With <span className="font-semibold text-gray-900">INVHUB</span>, we come with more than a decade of
+                                expertise in providing stylish, long-lasting, and safe safety solutions for residences and business
+                                establishments all over India. Driven by the latest international architectural styles, we deal in
                                 <span className="text-yellow-600 font-medium">
-                                    {" "}
-                                    Invisible Grills, Mesh Door, and Sliding Security Doors
-                                </span>
-                                , which provide protection while maintaining your view.
+                                    {" "} Invisible Grills, Mesh Doors </span> that provide unparalleled protection without obstructing your view.
                             </p>
 
                             <p className="text-gray-600 leading-relaxed">
-                                Inspired by global designs, our Invisible Safety Grills provide strength, visibility, and style. We have
-                                protected over <span className="font-bold text-yellow-600">1000 houses and businesses</span>, making us
-                                a trusted choice for architects, designers, and homeowners looking for long-lasting, visually appealing
-                                safety solutions.
+                                With our professional team, you get a speedy, clean and damage-free installation that suits every space.
+                                With <span className="font-bold text-yellow-600">1000+ customers trusting us</span>, we stand by quality, safety, and refinement. Balconies, windows or
+                                doors, our personalized solutions keep your loved ones safe while showcasing beauty and value for
+                                your space.
+
                             </p>
                         </div>
 
@@ -315,23 +320,28 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                 {/* Bottom Section - Additional Info */}
                 <div className="mt-20 text-center">
                     <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl p-8 md:p-12 border border-gray-700">
-                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Trusted Across India</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Trusted Nationwide, Safety Without Borders
+                        </h3>
                         <p className="text-gray-300 text-lg mb-6 max-w-3xl mx-auto">
-                            Whether you require sliding security doors in Hyderabad or any other city, we offer dependable solutions
-                            throughout India with our premium safety products.
+                            From Hyderabad to every corner of India, INVhub delivers premium products like Invisible Grills and Mesh Doors. Wherever you are, we bring safety right to your doorstep.
+                            Popular Services OR Cities We Serve in
+
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <span className="bg-yellow-400/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
-                                Invisible Grills
+                                Hyderabad
                             </span>
                             <span className="bg-yellow-400/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
-                                Mesh Door
+                                Delhi
                             </span>
                             <span className="bg-yellow-400/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
-                                Security Doors
+                                Kolkata
                             </span>
                             <span className="bg-yellow-400/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
-                                Hyderabad, India
+                                Chennai
+                            </span>
+                            <span className="bg-yellow-400/20 text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
+                                Many more
                             </span>
                         </div>
                     </div>
