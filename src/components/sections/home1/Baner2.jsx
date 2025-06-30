@@ -200,10 +200,10 @@ export default function Banner() {
       </section>
 
       {/* Desktop Banner */}
-      <section className="hidden md:block mt-5">
+      <section className="hidden md:block mt-2">
         <div
           className="relative overflow-hidden"
-          style={{ height: "500px", marginTop: "140px" }}
+          // style={{ height: "500px", marginTop: "140px" }}
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
         >
@@ -220,7 +220,7 @@ export default function Banner() {
                   src={slider.image || "/placeholder.svg"} />
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                   <div className="container flex justify-between items-center banner_section">
-                    <div className="main-slider-three__content banner_content max-w-2xl text-white">
+                    {/* <div className="main-slider-three__content banner_content max-w-2xl text-white">
                       <h1 className="text-4xl md:text-5xl font-bold mb-4">{slider.title}</h1>
                       <p className="text-xl mb-6">{slider.subtitle}</p>
                       {slider.button_link && slider.button_link !== "no link" && (
@@ -245,7 +245,7 @@ export default function Banner() {
                           </svg>
                         </a>
                       )}
-                    </div>
+                    </div> */}
                     {/* <div className="main-slider-three__content banner_form">
                       <ContactFormModal sourcePage="desktop" />
                     </div> */}

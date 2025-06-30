@@ -79,7 +79,8 @@ export default function Home() {
         />
         {metaTags?.other || ""}
       </Helmet>
-      <HeroSection />
+      {/* <HeroSection /> */}\
+      <Banner2 />
       <EnhancedAbout />
       {/* <TrustBanner /> */}
       {/* <ServicesSection /> */}

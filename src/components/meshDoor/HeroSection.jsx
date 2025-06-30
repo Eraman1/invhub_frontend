@@ -5,9 +5,9 @@ import 'swiper/css/effect-fade';
 import { EffectFade, Autoplay } from 'swiper/modules';
 
 const images = [
-    "/images/invisible1.png",
-    "/images/invisible2.png",
-    "/images/invisible3.png",
+    "/assets/images/meshdoor0.png",
+    "/assets/images/meshdoor1.png",
+    "/assets/images/meshdoor2.png",
 ];
 
 export default function HeroSection() {

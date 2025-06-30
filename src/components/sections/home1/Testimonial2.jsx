@@ -156,7 +156,7 @@ export default function EnhancedTestimonial() {
                                 centeredSlides: true,
                             },
                             1024: {
-                                slidesPerView: 2,
+                                slidesPerView: 1,
                                 centeredSlides: true,
                             },
                         }}
