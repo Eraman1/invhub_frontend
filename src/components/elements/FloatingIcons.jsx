@@ -16,18 +16,18 @@ const FixedRightSidebar = () => {
       >
         <div className="socialMedia " style={{ zIndex: 9 }}>
           <div className="QuickSideRightBar QuickSideRightBarWhatsapp">
-            <a href="tel:+971509344668">
+            <a href="tel:+918008916868">
               <div className="img_box">
                 <span className="icon-phone-call CallRight"></span>
               </div>
               <div className="slideLeft">
-                <span className="textRight">+971 50 934 4668</span>
+                <span className="textRight">+91-8008916868</span>
               </div>
             </a>
           </div>
           <div className="QuickSideRightBar QuickSideRightBarContact">
             <a
-              href="https://wa.me/+917654784452?text=Can I get more details about your service?"
+              href="https://wa.me/+918008916868?text=Can I get more details about your service?"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,7 +50,7 @@ const FixedRightSidebar = () => {
                 </span>
               </div>
               <div className="slideLeft">
-                <span className="textRight">+971 50 934 4668</span>
+                <span className="textRight">+91-8008916868</span>
               </div>
             </a>
           </div>

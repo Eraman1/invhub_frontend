@@ -27,6 +27,7 @@ import WhatMakesUsDifferent from "../components/sections/home1/WhatMakesUsDiffer
 import Gallery from "../components/sections/home1/Gallery";
 import VisitSection from "../components/sections/home1/Visit";
 import ServicesSectionNew from "../components/sections/home1/Services-section";
+import ProcessTimeline from "../components/sections/home1/ProcessTimeLine";
 
 const apiUrl = import.meta.env.VITE_BASE_URL;
 
@@ -82,20 +83,22 @@ export default function Home() {
       {/* <HeroSection /> */}\
       <Banner2 />
       <EnhancedAbout />
+      <ProcessTimeline />
       {/* <TrustBanner /> */}
       {/* <ServicesSection /> */}
       <ServicesSectionNew />
       {/* <Process /> */}
-      <TestimonialSection />
+
       <WhatMakesUsDifferent />
       {/* <ProductSection /> */}
       <Faq />
       {/* <Brand /> */}
-      <ServiceHighlight />
+      {/* <ServiceHighlight /> */}
       <Gallery />
       {/* <Video /> */}
       {/* <VisitSection/> */}
       <Funfacts />
+      <TestimonialSection />
       <Blog />
     </div>
   );

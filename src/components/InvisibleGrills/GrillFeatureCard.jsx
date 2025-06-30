@@ -3,7 +3,7 @@ import { useState } from "react";
 const items = [
     {
         title: "Material Specifications",
-        image: "/images/grill-material.jpg", // update with your actual image path
+        image: "assets/images/invisible0.jpg", // update with your actual image path
         points: [
             "High-tensile stainless steel wires",
             "Rust and corrosion-resistant",
@@ -12,7 +12,7 @@ const items = [
     },
     {
         title: "Applications",
-        image: "/images/grill-application.jpg",
+        image: "assets/images/invisible1.png",
         points: [
             "Balconies & windows in high-rise buildings",
             "Schools & institutions",
@@ -21,7 +21,7 @@ const items = [
     },
     {
         title: "Solutions",
-        image: "/images/grill-solutions.jpg",
+        image: "assets/images/invisible2.jpg",
         points: [
             "Child safety",
             "Pet protection",

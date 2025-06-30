@@ -25,7 +25,7 @@ export default function Blog() {
             </div>
           </div>
           <div className="container">
-            <div className="row">
+            <div className="row flex flex-wrap">
               {/*Blog One Single Start*/}
               {posts?.map((post, index) => (
                 <div
@@ -33,45 +33,49 @@ export default function Blog() {
                   className="col-xl-4 col-lg-4 wow fadeInUp"
                   data-wow-delay="100ms"
                 >
-                  <div className="blog-one__single">
+                  <div className="blog-one__single h-full flex flex-col bg-[#f4f4f4] rounded-xl overflow-hidden shadow-md">
                     <div className="blog-one__img-box">
                       <div className="blog-one__img">
-                        <img src={post.image} alt="@@title" />
-
+                        <img src={post.image} alt={post.title} className="w-full h-56 object-cover" />
                         <Link
                           to={`/post/${post.slug}`}
-                          className="blog-one__link" aria-label="blog post"
+                          className="blog-one__link absolute inset-0"
+                          aria-label="blog post"
                         >
-                          <span className="sr-only"></span>
+                          <span className="sr-only">{post.title}</span>
                         </Link>
                       </div>
-                      {/* <div className="blog-one__date">
-                                    <p>12<br/>Nov</p>
-                                </div> */}
                     </div>
-                    <div className="blog-one__content">
-                      <div className="blog-one__user">
-                        <p>
-                          <span className="icon-user"></span>By Admin
+
+                    {/* Content wrapper with flex-grow to push footer down */}
+                    <div className="blog-one__content flex flex-col flex-grow p-4">
+                      <div className="blog-one__user mb-2">
+                        <p className="text-sm text-gray-600 flex items-center gap-1">
+                          <span className="icon-user text-yellow-500"></span>By Admin
                         </p>
                       </div>
-                      <h3 className="blog-one__title">
+
+                      <h3 className="blog-one__title text-lg font-semibold mb-4">
                         <Link to={`/post/${post.slug}`}>{post.title}</Link>
                       </h3>
-                      <Link
-                        to={`/post/${post.slug}`}
-                        className="blog-one__learn-more"
-                        aria-label={`Learn more ${post.title}`}
-                      >
-                        View Details<span className="icon-arrow-right"></span>
-                      </Link>
+
+                      <div className="mt-auto">
+                        <Link
+                          to={`/post/${post.slug}`}
+                          className="blog-one__learn-more mt-auto text-sm font-semibold text-black hover:text-yellow-500 transition"
+                          aria-label={`Learn more ${post.title}`}
+                        >
+                          View Details <span className="icon-arrow-right inline-block ml-1"></span>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
               ))}
+
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-5">
             <Link
               to={`/blogs`}
               className="blog-one__learn-more"

@@ -4,33 +4,55 @@ import { Link } from 'react-router-dom';
 const posts = [
     {
         type: 'image',
-        title: 'Project Alpha Safety Setup',
-        image: '/assets/images/demo_img.jpg',
+        title: 'Mesh Door',
+        image: '/assets/images/contact_now.jpg',
         slug: 'project-alpha',
         location: 'noida',
+        description: 'recently install the meshdoor in the noida'
     },
     {
-        type: 'video',
-        title: 'Fire Drill Video Demo',
-        image: '/assets/images/demo_img.jpg', // fallback thumbnail
-        video: '/media/video1.mp4',
+        type: 'images',
+        title: 'Invisible Grill',
+        image: '/assets/images/HomeHeroNav.png', // fallback thumbnail
+        // video: '/media/video1.mp4',
         slug: 'fire-drill',
         location: 'pune',
+        description: 'recently install the Invisible Grill in the pune'
     },
     {
         type: 'image',
-        title: 'Wiring Inspection Update',
-        image: '/assets/images/demo_img.jpg',
+        title: 'Invisible Grill',
+        image: '/assets/images/invisible2.jpg',
         slug: 'wiring-inspection',
         location: 'mumbai',
+        description: 'recently install the Invisible Grill in the mumbai'
     },
     {
-        type: 'video',
-        title: 'Warehouse Safety Briefing',
-        image: '/assets/images/demo_img.jpg',
+        type: 'image',
+        title: 'Ivisible Grill',
+        image: 'https://invhub.in/wp-content/uploads/2025/03/invisible2.webp',
         video: '/media/video2.mp4',
         slug: 'warehouse-safety',
         location: 'bangalore',
+        description: 'recently install the Invisible Grill in the Bangalore'
+    },
+    {
+        type: 'image',
+        title: 'Ivisible Grill',
+        image: 'https://invhub.in/wp-content/uploads/2025/03/invisible7.webp',
+        video: '/media/video2.mp4',
+        slug: 'warehouse-safety',
+        location: 'bangalore',
+        description: 'recently install the Invisible Grill in the Bangalore '
+    },
+    {
+        type: 'image',
+        title: 'Ivisible Grill',
+        image: 'https://invhub.in/wp-content/uploads/2025/03/invisible3.webp',
+        video: '/media/video2.mp4',
+        slug: 'warehouse-safety',
+        location: 'bangalore',
+        description: 'recently install the Invisible Grill in the Bangalore'
     },
     // Add more items as needed
 ];
@@ -45,10 +67,10 @@ const BlogGallery = () => {
     const currentItems = posts.slice(startIndex, startIndex + itemsPerPage);
 
     return (
-        <div className="container mx-auto py-16 px-4">
+        <div className="container mx-auto py-16">
             {/* Heading Section */}
             <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-[#D4AF37] mb-4">Our Gallery</h2>
+                <h2 className="text-4xl font-bold text-[#D4AF37] mb-4">Our Recent Projects</h2>
                 <p className="text-gray-600">
                     Explore our work in action — images & videos from real projects.
                 </p>
@@ -62,7 +84,7 @@ const BlogGallery = () => {
                         className="col-xl-4 col-lg-4 px-4 mb-10 wow fadeInUp"
                         data-wow-delay="100ms"
                     >
-                        <div className="blog-one__single shadow-md rounded-xl overflow-hidden bg-white transition hover:shadow-lg">
+                        <div className="blog-one__single shadow-md rounded-xl h-full overflow-hidden bg-white transition hover:shadow-lg">
                             <div className="blog-one__img-box relative">
                                 <div className="blog-one__img relative w-full h-60 overflow-hidden">
                                     {post.type === 'video' ? (
@@ -90,7 +112,7 @@ const BlogGallery = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="blog-one__content p-4">
+                            <div className="blog-one__content px-3 pt-4">
                                 <div className="blog-one__user text-sm text-gray-500">
                                     <p className="flex items-center gap-2 text-sm">
                                         <span className="icon-location"></span> {post.location}
@@ -101,6 +123,7 @@ const BlogGallery = () => {
                                         {post.title}
                                     </Link>
                                 </h3>
+                                <p className='text-xs text-gray-600'>{post.description}</p>
                             </div>
                         </div>
                     </div>
@@ -108,7 +131,7 @@ const BlogGallery = () => {
             </div>
 
             {/* Small Pagination */}
-            <div className="flex justify-center mt-8 space-x-2">
+            <div className="flex justify-center mt-4 space-x-2">
                 {[...Array(totalPages)].map((_, i) => (
                     <button
                         key={i}

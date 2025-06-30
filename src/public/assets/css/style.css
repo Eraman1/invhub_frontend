@@ -296,7 +296,7 @@ ul {
 /* animation on services card header */
 .title-animation {
   font-weight: bold;
-  background: linear-gradient(-45deg, #38bdf8, #a78bfa, #5eead4, #86efac);
+  background: linear-gradient(-45deg, #000000, #1f2937, #000000);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;

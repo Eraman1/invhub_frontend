@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { CheckCircle, Shield, Award, Users, Eye, Lock, ArrowRight, Star, MapPin, Phone, Mail } from "lucide-react"
+import { CheckCircle, Shield, Award, Users, Eye, ArrowRight, Star, MapPin, ShieldCheck, BadgeCheck, Headset, TrendingUp } from "lucide-react"
 
 export default function EnhancedAbout({ isAboutPage = false }) {
     const [isVisible, setIsVisible] = useState(false)
@@ -22,30 +22,29 @@ export default function EnhancedAbout({ isAboutPage = false }) {
         {
             icon: Eye,
             title: "Invisible Safety Grills",
-            description: "Maintain your beautiful view while ensuring complete safety",
+            description: "Unobstructed views with high-tensile safety—protection you don't see, but always feel.",
         },
         {
-            icon: Shield,
+            icon: ShieldCheck,
             title: "Custom-Fit Installations",
-            description: "Advanced safety solutions without compromising aesthetics",
+            description: "Tailored to every window and balcony for a secure fit that complements your space.",
         },
         {
-            icon: Lock,
+            icon: BadgeCheck,
             title: "Affordable Options",
-            description: "Premium sliding security doors available across India",
+            description: "Reliable safety doesn’t have to cost a fortune—choose from value-packed options.",
         },
         {
-            icon: Shield,
+            icon: Headset,
             title: "Dedicated Support Team",
-            description: "Advanced safety solutions without compromising aesthetics",
+            description: "Get expert guidance and prompt service from our trained safety professionals.",
         },
-
         {
-            icon: Shield,
+            icon: TrendingUp,
             title: "Long-Lasting Value",
-            description: "Advanced safety solutions without compromising aesthetics",
+            description: "Engineered to last with corrosion-resistant materials for years of worry-free protection.",
         },
-    ]
+    ];
 
     const services = [
         { name: "Invisible Grills", image: "/placeholder.svg?height=150&width=200" },
@@ -251,7 +250,7 @@ export default function EnhancedAbout({ isAboutPage = false }) {
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="flex items-start gap-4 p-2 bg-white/50 rounded-xl border border-gray-200 hover:border-yellow-400/30 transition-all duration-300 hover:shadow-md"
+                                className="flex items-start gap-4 p-2 bg-gradient-to-br from-[#dcdcdc] to-[#f5f5f5] rounded-xl border border-gray-200 hover:border-yellow-400/30 transition-all duration-300 hover:shadow-md"
                             >
                                 <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-lg flex items-center justify-center flex-shrink-0">
                                     <feature.icon className="w-6 h-6 text-black" />

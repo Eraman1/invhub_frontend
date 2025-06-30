@@ -128,7 +128,7 @@
     justify-content: center;
     width: 74px;
     height: 74px;
-    background-color: var(--erepair-primary);
+    background: linear-gradient(to bottom, rgba(255, 255, 200, 0.6), transparent);
     border-radius: 50%;
     text-align: center;
 }
@@ -148,7 +148,7 @@
 }
 
 .blog-one__title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -0.72px;

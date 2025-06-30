@@ -35,7 +35,7 @@ export default function Cta() {
               </div>
               <div className="cta-one__call-box">
                 <div className="icon">
-                  <a href="tel:+8002272633" className="flex justify-center items-center">
+                  <a href="tel:+918008916868" className="flex justify-center items-center">
                     <span className="icon-call"></span>
                   </a>
 
@@ -43,7 +43,7 @@ export default function Cta() {
                 <div className="content">
                   <p>Toll Free</p>
                   <h4>
-                    <Link to="tel:+8002272633">800 227 2633</Link>
+                    <Link to="tel:+918008916868">+91-8008916868</Link>
                   </h4>
                 </div>
               </div>

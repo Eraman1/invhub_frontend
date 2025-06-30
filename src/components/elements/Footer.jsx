@@ -48,134 +48,89 @@ export default function Footer() {
         <div className="site-footer__shape-1 float-bob-x">
           <img src="assets/images/shapes/services-two-shape-1.png" alt="" />
         </div>
-        <div className="container">
-          <div className="site-footer__top">
-            <div className="row">
-              <div
-                className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div className="footer-widget__column footer-widget__about">
-                  <div className="footer-widget__logo">
+        <div className="bg-gray-900 text-white">
+          <div className="container mx-auto">
+            <div className="site-footer__top">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                {/* Column 1: Logo and About */}
+                <div>
+                  <div className="mb-4">
                     <Link to="/">
-                      <img className="w-52" src={footerLogo} alt="logo" />
+                      <img className="w-50" src={footerLogo} alt="logo" />
                     </Link>
                   </div>
-                  <p className="footer-widget__about-text">
-                    Get back on the roof with our reliable Grill
-                    replacement services. Drive stress-free knowing your Home is in top condition.
+                  <p className="text-sm leading-relaxed mb-4">
+                    At INVhub Safety Solution Pvt Ltd, we stress safety while maintaining beauty.
+                    We specialize in Invisible Grills, Pleated Mosquito Nets, and Sliding Security Door—
+                    providing protection while preserving your view.
                   </p>
-                  <div className="site-footer__social">
-                    <Link
-                      to={
-                        "https://www.facebook.com"
-                      } aria-label="facebook icon"
-                    >
-                      <i className="icon-facebook"></i>
+                  <div className="flex space-x-4 mt-4">
+                    <Link to="https://www.facebook.com" aria-label="Facebook">
+                      <i className="icon-facebook text-xl hover:text-blue-500 transition"></i>
                     </Link>
-                    <Link to={"https://www.instagram.com/"} aria-label="instagram icon">
-                      <i className="icon-instagram"></i>
+                    <Link to="https://www.instagram.com/" aria-label="Instagram">
+                      <i className="icon-instagram text-xl hover:text-pink-500 transition"></i>
                     </Link>
                   </div>
-                  {/* <div className="site-footer__social QrCode">
-                    <img src={QrCode} alt="logo" />
-                  </div> */}
                 </div>
-              </div>
-              <div
-                className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div className="footer-widget__column footer-widget__usefull-link">
-                  <div className="footer-widget__title-box">
-                    <h3 className="footer-widget__title">Our Company</h3>
-                  </div>
-                  <div className="footer-widget__link-box">
-                    <ul className="footer-widget__link list-unstyled">
-                      <li>
-                        <Link to={"/"}>Home</Link>
-                      </li>
-                      <li>
-                        <Link to={"/about"}>About Us</Link>
-                      </li>
-                      <li>
-                        <Link to={"/services"}>Services</Link>
-                      </li>
-                      <li>
-                        <Link to={"/products"}>Products</Link>
-                      </li>
-                      <li>
-                        <Link to={"/blogs"}>Blog</Link>
-                      </li>
-                      <li>
-                        <Link to={"/contact-us"}>Contact</Link>
-                      </li>
-                    </ul>
-                  </div>
+
+                {/* Column 2: Our Company Links */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-200 mb-4 border-b border-gray-700 pb-2">Our Company</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li><Link className="hover:text-gray-200" to="/">Home</Link></li>
+                    <li><Link className="hover:text-gray-200" to="/about">About Us</Link></li>
+                    <li><Link className="hover:text-gray-200" to="/services">Services</Link></li>
+                    <li><Link className="hover:text-gray-200" to="/products">Products</Link></li>
+                    <li><Link className="hover:text-gray-200" to="/blogs">Blog</Link></li>
+                    <li><Link className="hover:text-gray-200" to="/contact-us">Contact</Link></li>
+                  </ul>
                 </div>
-              </div>
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="footer-widget__column footer-widget__services">
-                  <div className="footer-widget__title-box">
-                    <h3 className="footer-widget__title">Our Service</h3>
-                  </div>
-                  <ul className="footer-widget__link list-unstyled">
+
+                {/* Column 3: Services */}
+                <div>
+                  <h3 className="text-lg text-gray-200 font-semibold mb-4 border-b border-gray-700 pb-2">Our Services</h3>
+                  <ul className="space-y-2 text-sm">
                     {userServices?.map((service, index) => (
                       <li key={index}>
-                        <Link to={`/service/${service.slug}`}>
-                          {service.title}
-                        </Link>
+                        <Link className="hover:text-gray-200" to={`/service/${service.slug}`}>{service.title}</Link>
                       </li>
                     ))}
                   </ul>
                 </div>
-              </div>
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="400ms"
-              >
-                <div className="footer-widget__column footer-widget__contact">
-                  <div className="footer-widget__title-box">
-                    <h3 className="footer-widget__title">Contact us</h3>
+
+                {/* Column 4: Contact */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4 text-gray-200 border-b border-gray-700 pb-2">Contact Us</h3>
+                  <div className="text-sm space-y-4">
+                    {/* Office Address */}
+                    <div>
+                      <p className="font-semibold">Office Address</p>
+                      <p>H.No:-2-2/115/1/A/1, Plot.No:-54/p, Suryodaya Colony, Bandlaguda Jagir, Hyderabad, 500086</p>
+                      <p className="mt-1">
+                        <a href="tel:+918008916868" className="block hover:text-gray-200">Phone: +91-8008916868</a>
+                        <a href="mailto:info@invhub.in" className="hover:text-gray-200">Email: info@invhub.in</a>
+                      </p>
+                    </div>
+
+                    {/* Experience Center */}
+                    <div className="pt-4 border-t border-gray-700">
+                      <p className="font-semibold">Experience Center</p>
+                      <p>P.No:191, Road No 4, Venkateshwara Colony, Hastinapuram, Hyderabad 500079</p>
+                      <p className="mt-1">
+                        <a href="tel:+919966761117" className="block hover:text-gray-200">Phone: +91-9966761117</a>
+                        <a href="mailto:info@invhub.in" className="hover:text-gray-200">Email: info@invhub.in</a>
+                      </p>
+                    </div>
                   </div>
-                  <ul className="footer-widget__contact-list list-unstyled">
-                    <li>
-                      <h3>Address</h3>
-                      <div className="content">
-                        <p>
-                          <b>Office Address:</b> H.No:-2-2/115/1/A/1 Plot.No:-54/p Suryodaya colony Bandlaguda Jagir Hyderabad, 500086
-                        </p>
-                        <br />
-                        <p>
-                          <b>Experience Centers:</b> P.NO:191, Road No 4, Venkateshwara colony, Hastinapuram. Hyderabad 500079
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>Contact</h3>
-                      <div className="content">
-                        <p>
-                          <Link to="tel:+918008916868">Phone: +91-8008916868</Link>
-                        </p>
-                        <p>
-                          <Link to="tel:+919966761117">Phone: +91-9966761117</Link>
-                        </p>
-                        <p>
-                          <Link to="mailto:info@invhub.in">
-                            Email: info@invhub.in
-                          </Link>
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
+
         <div className="site-footer__bottom">
           <div className="container">
             <div className="site-footer__bottom-inner mb-4 mb-md-0">

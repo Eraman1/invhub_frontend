@@ -2,18 +2,42 @@ import { useState } from "react";
 
 const faqs = [
     {
-        question: "What services does INVHUB provide?",
-        answer: "We provide advanced safety solutions tailored to industrial and commercial environments, including surveillance, monitoring, and protection systems.",
+        question: "What products do INVhub offer?",
+        answer:
+            "We specialize in Invisible Grills and Mesh Doors that enhance safety without compromising aesthetics.",
     },
     {
-        question: "How can I contact support?",
-        answer: "You can reach us via our support email or phone number listed in the Contact Us section of our website.",
+        question: "Are INVhub’s safety solutions suitable for all home types?",
+        answer:
+            "Yes, our solutions are custom-designed to fit apartments, villas and even commercial spaces.",
     },
     {
-        question: "Do you offer installation services?",
-        answer: "Yes, we provide on-site installation and configuration services for all our safety systems.",
+        question: "How safe are INVhub’s Invisible Grills for children and pets?",
+        answer:
+            "Our grills use high-tensile stainless steel wire and are spaced to prevent children or pets from slipping through.",
     },
+    {
+        question: "Will the installation damage my walls or structure?",
+        answer:
+            "No, it will not damage the structure, as our team uses certified tools and clean methods to ensure zero damage during installation.",
+    },
+    {
+        question: "Do your products come with a warranty?",
+        answer:
+            "Yes, we provide a warranty on all products to ensure long-lasting protection and customer satisfaction.",
+    },
+    {
+        question: "How long does the installation process take?",
+        answer:
+            "Most installations are completed within a few hours, depending on the size and complexity of the space.",
+    },
+    {
+        question: "How can I get a price quote?",
+        answer:
+            "You can contact us via our website, WhatsApp, or phone for a quick, free consultation and quote.",
+    }
 ];
+  
 
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState(null);

@@ -27,8 +27,8 @@ const testimonials = [
         date: "2024",
     },
     {
-        name: "Riya Sharma",
-        title: "Safety Director",
+        name: "Rakesh Mehta",
+        title: "Bangalore",
         company: "Manufacturing Corp",
         companyLogo: "/placeholder.svg?height=40&width=120",
         image: "/placeholder.svg?height=80&width=80",
@@ -36,15 +36,15 @@ const testimonials = [
         projectType: "Safety Analytics",
         rating: 5,
         review:
-            "I was genuinely impressed by the quality of the invisible grills. The stainless steel wires are sturdy, rust-proof, and still manage to look sleek. It’s rare to find products that combine safety and style so well. ",
+            "I was genuinely impressed by the quality of the invisible grills. The stainless steel wires are sturdy, rust-proof, and still manage to look sleek. It’s rare to find products that combine safety and style so well.",
         metrics: { "risk-reduction": "+75%", monitoring: "24/7", alerts: "Real-time" },
         tags: ["Risk Management", "Analytics", "Monitoring"],
         verified: true,
         date: "2024",
     },
     {
-        name: "Marcus Johnson",
-        title: "Operations Manager",
+        name: "Sonia Kapoor",
+        title: "Hyderabad",
         company: "Industrial Solutions",
         companyLogo: "/placeholder.svg?height=40&width=120",
         image: "/placeholder.svg?height=80&width=80",
@@ -52,15 +52,15 @@ const testimonials = [
         projectType: "Training Platform",
         rating: 5,
         review:
-            "They built us a comprehensive safety training portal that handles certification tracking beautifully. The user experience and compliance features are top-notch. Our team loves the intuitive interface.",
+            "The installation team arrived on time, worked efficiently, and left no mess behind. They completed the entire job within a few hours without damaging my walls or windows. Very professional and hassle-free experience!",
         metrics: { completion: "+90%", certification: "100%", engagement: "+80%" },
         tags: ["Training", "Certification", "E-Learning"],
         verified: true,
         date: "2024",
     },
     {
-        name: "Sarah Chen",
-        title: "HSE Manager",
+        name: "Amit Desai",
+        title: "Ahmedabad",
         company: "Construction Ltd",
         companyLogo: "/placeholder.svg?height=40&width=120",
         image: "/placeholder.svg?height=80&width=80",
@@ -68,7 +68,23 @@ const testimonials = [
         projectType: "Safety Reporting",
         rating: 5,
         review:
-            "Working with INVHUB was a game-changer for our incident management. They created an efficient reporting system that makes safety tracking comprehensive and accessible. Outstanding results!",
+            "It’s clear that INVhub knows what they’re doing. Their team guided me with expert advice and showed attention to detail throughout the project. They made the entire process smooth and stress-free.",
+        metrics: { reporting: "+95%", resolution: "-50%", prevention: "+70%" },
+        tags: ["Incident Management", "Reporting", "Prevention"],
+        verified: true,
+        date: "2024",
+    },
+    {
+        name: "Reena Joseph",
+        title: "Mumbai",
+        company: "Construction Ltd",
+        companyLogo: "/placeholder.svg?height=40&width=120",
+        image: "/placeholder.svg?height=80&width=80",
+        project: "Incident Management System",
+        projectType: "Safety Reporting",
+        rating: 5,
+        review:
+            "I love how the invisible grills have enhanced my apartment’s look while ensuring my kids and pets are safe. The design doesn’t block the view at all, and it’s such a relief to have that peace of mind.",
         metrics: { reporting: "+95%", resolution: "-50%", prevention: "+70%" },
         tags: ["Incident Management", "Reporting", "Prevention"],
         verified: true,
@@ -156,8 +172,8 @@ export default function EnhancedTestimonial() {
                                 centeredSlides: true,
                             },
                             1024: {
-                                slidesPerView: 1,
-                                centeredSlides: true,
+                                slidesPerView: 2,
+                                centeredSlides: false,
                             },
                         }}
                         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -168,14 +184,16 @@ export default function EnhancedTestimonial() {
                                 <div className="group py-3">
                                     <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 md:p-10 border border-gray-700 shadow-xl hover:shadow-yellow-500/20 transition-all duration-500 hover:border-yellow-400/50 hover:-translate-y-2">
                                         {/* Company Logo & Verification */}
-                                        <div className="flex items-center justify-between mb-6">
+                                        <div className="flex items-center justify-between w-full mb-6">
                                             {/* Rating */}
-                                            <div className="flex items-center gap-1 mb-6">
+                                            <div className="flex items-center gap-1">
                                                 {[...Array(testimonial.rating)].map((_, i) => (
                                                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                                                 ))}
                                                 <span className="ml-2 text-gray-500 text-sm">({testimonial.rating}.0)</span>
                                             </div>
+
+                                            {/* Verified */}
                                             {testimonial.verified && (
                                                 <div className="flex items-center gap-1 text-yellow-400 text-sm">
                                                     <CheckCircle className="w-4 h-4" />
@@ -186,10 +204,11 @@ export default function EnhancedTestimonial() {
 
 
 
+
                                         {/* Quote */}
                                         <div className="relative mb-8">
                                             <Quote className="absolute -top-2 -left-2 w-8 h-8 text-yellow-500/30" />
-                                            <p className="text-lg md:text-xl leading-relaxed text-gray-100 pl-6 relative z-10">
+                                            <p className="text-md md:text-lg leading-relaxed text-gray-100 pl-6 relative z-10">
                                                 {testimonial.review}
                                             </p>
                                         </div>
@@ -211,12 +230,12 @@ export default function EnhancedTestimonial() {
                                                 <div>
                                                     <div className="font-semibold text-white text-lg">{testimonial.name}</div>
                                                     <div className="text-sm text-gray-300">{testimonial.title}</div>
-                                                    <div className="text-sm text-gray-400">{testimonial.company}</div>
+                                                    {/* <div className="text-sm text-gray-400">{testimonial.company}</div> */}
                                                 </div>
                                             </div>
 
                                             {/* Project Info */}
-                                            <div className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-400/30 p-4 rounded-xl min-w-[200px]">
+                                            {/* <div className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-400/30 p-4 rounded-xl min-w-[200px]">
                                                 <div className="text-center">
                                                     <div className="text-sm text-yellow-400 mb-1">{testimonial.projectType}</div>
                                                     <div className="font-semibold text-white">{testimonial.project}</div>
@@ -231,7 +250,7 @@ export default function EnhancedTestimonial() {
                                                         ))}
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -240,12 +259,14 @@ export default function EnhancedTestimonial() {
                     </Swiper>
 
                     {/* Custom Navigation */}
-                    <button className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-yellow-500/25">
+                    <button className="swiper-button-prev-custom absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-yellow-500/25">
                         <ArrowLeft className="w-5 h-5" />
                     </button>
-                    <button className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-yellow-500/25">
+
+                    <button className="swiper-button-next-custom absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-yellow-500/25">
                         <ArrowRight className="w-5 h-5" />
                     </button>
+
                 </div>
 
                 {/* Bottom CTA */}

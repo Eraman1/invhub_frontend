@@ -235,9 +235,9 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     flex-wrap: wrap;
-    padding: 30px 0 29px;
+    padding: 11px 0 10px;
 }
 
 .site-footer__bottom-text {
