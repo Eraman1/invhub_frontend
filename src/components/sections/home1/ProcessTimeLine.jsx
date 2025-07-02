@@ -9,12 +9,12 @@ export default function ProcessTimeline() {
     ];
 
     return (
-        <section className="bg-gradient-to-br from-[#dcdcdc] to-[#f5f5f5] py-16">
+        <section className="bg-gradient-to-br from-[#dcdcdc] to-[#f5f5f5] py-16 px-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-14">
                 <span className="text-yellow-500">Our Process:</span> Making Your Space Safer & Smarter
             </h2>
 
-            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {steps.map((step, index) => (
                     <div
                         key={index}

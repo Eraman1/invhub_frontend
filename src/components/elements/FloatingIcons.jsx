@@ -73,10 +73,10 @@ const FixedRightSidebar = () => {
       >
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/+917654784452?text=Can I get more details about your service?"
+          href="https://wa.me/+918008916868?text=Can I get more details about your service?"
           target="_blank"
           rel="noopener noreferrer"
-          className="main-menu-two__btn thm-btn"
+          className=""
           style={{
             backgroundColor: "#F2871C",
             flex: 1,
@@ -97,8 +97,8 @@ const FixedRightSidebar = () => {
 
         {/* Call Now Button */}
         <a
-          href="tel:+971509344668"
-          className="main-menu-two__btn thm-btn"
+          href="tel:+919966761117"
+          className=""
           style={{
             backgroundColor: "#F2871C",
             flex: 1,

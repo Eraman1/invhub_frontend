@@ -45,10 +45,10 @@ export default function WhyInvhubSection() {
             <div className="max-w-7xl mx-auto">
                 <div className="md:flex justify-between mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 max-w-xl leading-tight">
-                        Why only <span className="text-yellow-600">INVHUB Safety Solutions</span> Private Limited Invisible Grills
+                        Why only <span className="text-yellow-600">INVHUB Safety Solutions Pvt. Ltd.</span> Private Limited Invisible Grills
                     </h2>
                     <p className="text-gray-600 md:w-1/2 mt-4 md:mt-0">
-                        Choosing INVHUB's invisible grills can be beneficial for several reasons, including our strong reputation, top-quality products, and excellent customer service. Here’s why you should choose us.
+                        Choosing 's invisible grills can be beneficial for several reasons, including our strong reputation, top-quality products, and excellent customer service. Here’s why you should choose us.
                     </p>
                 </div>
 

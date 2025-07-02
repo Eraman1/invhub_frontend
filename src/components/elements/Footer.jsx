@@ -135,7 +135,7 @@ export default function Footer() {
           <div className="container">
             <div className="site-footer__bottom-inner mb-4 mb-md-0">
               <p className="site-footer__bottom-text mb-5 mb-md-0">
-                Copyright © 2025 by Invhub. All rights reserved.
+                Copyright © 2025 by Invhub Safety Solution Pvt Ltd. All rights reserved.
                 Developed by{" "}
                 <span>
                   {" "}

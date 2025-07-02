@@ -89,7 +89,7 @@ export default function Header2({ scroll, handlePopup }) {
                   <div className="main-menu-two__logo">
                     <Link to="/">
                       <img
-                        className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto transition-all duration-300"
+                        className="h-12 sm:h-12 md:h-16 lg:h-18 w-auto transition-all duration-300"
                         src={headerLogo}
                         alt="Logo"
                       />
@@ -97,7 +97,7 @@ export default function Header2({ scroll, handlePopup }) {
                   </div>
 
                   <Button
-                    className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black  rounded-full font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 d-md-none   px-1 text-sm "
+                    className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black scale-75 rounded-full font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 d-md-none  px-1 py-1 text-sm "
                     onClick={() => setModalOpen(true)}
                   >
                     Claim Warranty

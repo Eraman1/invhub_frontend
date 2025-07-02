@@ -69,8 +69,8 @@ export default function Banner() {
 
   // Fallback images (your existing ones)
   const mobileBannerImage =
-    "https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/f3e5ee1f-6c25-46ce-d465-d35e06da4d00/public"
-  const desktopBannerImage = "assets/images/newBanner.jpg"
+    "assets/images/glamorour-curly-lady.jpg"
+  const desktopBannerImage = "assets/images/Convert-your-Balcony.webp"
 
   // Get the sliders array, handling both direct array response and object with sliders property
   const sliders = Array.isArray(bannerImage) ? bannerImage : bannerImage?.sliders || []
@@ -87,7 +87,7 @@ export default function Banner() {
         {/* Mobile Banner Loading */}
         <section className="md:hidden relative flex flex-col">
           <div className="aspect-w-16 aspect-h-9">
-            <div className="bg-gray-200 animate-pulse w-full h-full"></div>
+            <div className="bg-gray-200 animate-pulse w-full h-full" ></div>
           </div>
         </section>
 
@@ -163,7 +163,7 @@ export default function Banner() {
                   className="object-cover w-full h-full"
                   loading={index === 0 ? "eager" : "lazy"}
                 />
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                {/* <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                   <div className="text-center text-white px-4">
                     <h2 className="text-xl font-bold mb-2">{slider.title}</h2>
                     <p className="text-sm mb-3">{slider.subtitle}</p>
@@ -178,7 +178,7 @@ export default function Banner() {
                       </a>
                     )}
                   </div>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

@@ -10,7 +10,7 @@ export default function Funfacts() {
           <div className="row">
             <div className="relative text-center text-white max-w-3xl px-4">
               <h1 className="text-4xl md:text-6xl text-white font-bold leading-tight mb-4">
-                Your Space Deserves <span className="text-[#D4AF37]">InvHub.</span>
+                Your Space Deserves <span className="text-[#D4AF37]">INVHUB Safety Solutions Pvt. Ltd.</span>
               </h1>
               <div className="w-20 h-[2px] bg-[#D4AF37] mx-auto my-4"></div>
               <p className="text-lg md:text-xl mb-8">

@@ -50,7 +50,7 @@ export default function About() {
                                             Without Compromising the View</h2>
                                     </div>
                                 </div>
-                                <p className="about-one__text-1">At INVhub, we stress safety while maintaining beauty. We specialize in Invisible Grills, Pleated Mosquito Nets, and Sliding Security Door, which provide protection while maintaining your view. Whether you require sliding security door in Hyderabad or another city, we offer dependable solutions throughout India.</p>
+                                <p className="about-one__text-1">At INVHUB Safety Solutions Pvt. Ltd., we stress safety while maintaining beauty. We specialize in Invisible Grills, Pleated Mosquito Nets, and Sliding Security Door, which provide protection while maintaining your view. Whether you require sliding security door in Hyderabad or another city, we offer dependable solutions throughout India.</p>
                                 <p className="about-one__text-2">Inspired by global designs, our Invisible Safety Grills provide strength, visibility, and style. We have protected over 1000 houses and businesses, making us a trusted choice for architects, designers, and homeowners looking for long-lasting, visually appealing safety solutions.</p>
 
 

@@ -48,12 +48,12 @@ export default function Menu2({ isMobile }) {
   };
 
   return (
-    <ul className="main-menu__list text-[#F2871C] mt-14">
+    <ul className="main-menu__list text-blue-900 mt-14">
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" className=" text-blue-900">Home</Link>
       </li>
       <li>
-        <Link to="/about">About Us</Link>
+        <Link to="/about" className=" text-blue-900">About Us</Link>
       </li>
 
       {/* Services Accordion Submenu */}
@@ -68,20 +68,26 @@ export default function Menu2({ isMobile }) {
         {isMobile && isServicesOpen && (
           <div className="accordion-content bg-gray-800 p-1 mt-2">
             <ul>
-              {userServices?.map((service) => (
+              {/* {userServices?.map((service) => (
                 <li key={service._id} className="pl-4 py-1">
                   <Link to={`/service/${service.slug}`} className="hover:text-orange-300" aria-label={`Learn more about the service: ${service.title}`}>
                     {service.title}
                   </Link>
                 </li>
-              ))}
+              ))} */}
+              <li >
+                <Link to={`/invisible-grills`}>Invisible Grill</Link>
+              </li>
+              <li >
+                <Link to={`/mesh-door`}>Mesh Door</Link>
+              </li>
             </ul>
           </div>
         )}
       </li>
 
       {/* Products Accordion Submenu */}
-      <li className="dropdown">
+      {/* <li className="dropdown">
         <div
           onClick={toggleProducts}
           className="flex justify-between items-center cursor-pointer"
@@ -102,13 +108,13 @@ export default function Menu2({ isMobile }) {
             </ul>
           </div>
         )}
-      </li>
+      </li> */}
 
       <li>
-        <Link to="/blogs">Blog</Link>
+        <Link to="/blogs" className=" text-blue-900">Blog</Link>
       </li>
       <li>
-        <Link to="/contact-us">Contact</Link>
+        <Link to="/contact-us" className=" text-blue-900">Contact</Link>
       </li>
     </ul>
   );

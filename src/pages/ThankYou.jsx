@@ -18,10 +18,10 @@ export default function ThankYou() {
   return (
     <div>
       <Helmet>
-        <title>Thank You Page - 800 BBattery</title>
+        <title>Thank You Page - InvHub</title>
         <meta
           name="description"
-          content="Thank you for getting in touch with 800 BBattery. We appreciate your message and will respond shortly."
+          content="Thank you for getting in touch with InvHub. We appreciate your message and will respond shortly."
         />
       </Helmet>
       <ThankYouMessage />
