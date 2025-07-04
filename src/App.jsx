@@ -130,8 +130,7 @@ export default function App() {
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/search" element={<Search />} />
             <Route path="/mesh-door" element={<MeshDoor />} />
-            <Route path="/invisible-grills" element={<InvisibleGrills />} />
-            <Route path="/mesh-door" element={<MeshDoor />} />
+            <Route path="/invisible-grill" element={<InvisibleGrills />} />
 
             {/* Private Routes */}
             <Route element={<PrivateRoute />}>

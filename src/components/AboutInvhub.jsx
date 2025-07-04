@@ -133,14 +133,8 @@ const AboutInvhubSection = () => {
                     <div className="text-center mb-10">
 
                         <h2 className="text-4xl font-bold text-[#D4AF37] mb-2">
-                            Have Questions? We’ve Got Answers.
+                            What are the key features of INVHUB?
                         </h2>
-                        <p className="text-gray-600 max-w-3xl mx-auto">
-                            INVHUB Safety Solution was founded with the vision of building a safer world. Since
-                            our inception, we've pioneered safety innovations for both
-                            industrial and residential spaces — enhancing security, style, and
-                            sustainability across the nation.
-                        </p>
                     </div>
 
                     <div className="bg-gray-100 rounded-lg shadow-md divide-y divide-gray-300">

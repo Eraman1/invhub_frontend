@@ -92,11 +92,18 @@ export default function Footer() {
                 <div>
                   <h3 className="text-lg text-gray-200 font-semibold mb-4 border-b border-gray-700 pb-2">Our Services</h3>
                   <ul className="space-y-2 text-sm">
-                    {userServices?.map((service, index) => (
+                    {/* {userServices?.map((service, index) => (
                       <li key={index}>
                         <Link className="hover:text-gray-200" to={`/service/${service.slug}`}>{service.title}</Link>
                       </li>
-                    ))}
+                    ))} */}
+
+                    <li >
+                      <Link className="hover:text-gray-200" to={`/invisible-grill`}>Invisible Grill</Link>
+                    </li>
+                    <li >
+                      <Link className="hover:text-gray-200" to={`/mesh-door`}>Mesh Door</Link>
+                    </li>
                   </ul>
                 </div>
 

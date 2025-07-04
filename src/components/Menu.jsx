@@ -56,7 +56,7 @@ export default function Menu() {
               </li>
             ))} */}
             <li >
-              <Link to={`/invisible-grills`}>Invisible Grill</Link>
+              <Link to={`/invisible-grill`}>Invisible Grill</Link>
             </li>
             <li >
               <Link to={`/mesh-door`}>Mesh Door</Link>

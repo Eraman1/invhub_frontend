@@ -248,7 +248,7 @@ export default function ServicesSection() {
 
                             {/* Button fixed at bottom */}
                             <div className="mt-auto">
-                                <a href="/invisible-grills" className="w-full bg-amber-500 hover:bg-amber-600 text-white py-3 px-4 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2">
+                                <a href="/invisible-grill" className="w-full bg-amber-500 hover:bg-amber-600 text-white py-3 px-4 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2">
                                     <Lock className="h-4 w-4" />
                                     Learn More About Invisible Grills
                                 </a>
